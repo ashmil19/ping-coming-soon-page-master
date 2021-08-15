@@ -5,4 +5,58 @@
 }
 body{
     font-family: 'Libre Franklin', sans-serif;
+    Font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper{
+    width: 1440px;
+    height: 100vh;
+    /* background: yellow; */
+    display: grid;
+    grid-template-rows: .3fr .3fr .3fr 1fr .3fr;
+    grid-template-areas:"logo"
+                        "heading"
+                        "inputbox"
+                        "dashboard"
+                        "socialIcons";
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logoImg{
+    width: 100px;
+    content: url(images/logo.svg);
+}
+.heading{
+    grid-area: heading;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.heading h1{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.heading h1 span{
+    color: black;
+    font-weight: 700;
+}
+.heading p{
+    font-size: 16px;
+}
+.inputbox{
+    grid-area: inputbox;
+}
+.dashboard{
+    grid-area: dashboard;
+}
+.socialIcons{
+    grid-area: socialIcons;
 }
