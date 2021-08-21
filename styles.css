@@ -64,12 +64,13 @@ body{
     border: 2px solid hsl(223, 100%, 88%);
     display: flex;
     align-items: center;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
 }
 ::placeholder {
     color: hsl(223, 100%, 88%);
     opacity: 1;
-    position: relative;
-    left: 20px;
 }
 button{
     width: 150px;
@@ -85,6 +86,13 @@ button{
 }
 .dashboard{
     grid-area: dashboard;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dashimg{
+    content: url(images/illustration-dashboard.png);
+    width: 500px;
 }
 .socialIcons{
     grid-area: socialIcons;
