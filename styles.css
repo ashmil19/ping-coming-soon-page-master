@@ -96,4 +96,14 @@ button{
 }
 .socialIcons{
     grid-area: socialIcons;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:"icons"
+                        "iconspara";
+}
+.icons{
+    grid-area: icons;
+}
+.iconspara{
+    grid-area: iconspara;
 }
