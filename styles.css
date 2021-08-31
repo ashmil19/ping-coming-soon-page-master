@@ -141,3 +141,46 @@ button:hover{
 .iconcontent{
     margin-left: 10px;
 }
+
+/* mobile layout */
+
+@media(max-width: 767px){
+    .wrapper{
+        width: 375px;
+    }
+    .logoImg{
+        width: 60px;
+        margin-top: 60px;
+    }
+    .heading h1{
+        font-size: 25px;
+    }
+    .heading p{
+        font-size: 14px;
+    }
+    .inputbox{
+        flex-direction: column;
+    }
+    .inputbox input[type=text]{
+        width: 300px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    button{
+        width: 300px;
+        left: 0;
+    }
+    .dashimg{
+        width: 350px;
+    }
+    .icons{
+        align-items: flex-start;
+    }
+    .icns{
+        width: 30px;
+        height: 30px;
+    }
+    .fab{
+        font-size: 15px;
+    }
+}
