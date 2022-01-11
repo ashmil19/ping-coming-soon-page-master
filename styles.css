@@ -13,7 +13,6 @@ body{
 .wrapper{
     width: 1440px;
     height: 100vh;
-    /* background: yellow; */
     display: grid;
     grid-template-rows: .3fr .3fr .3fr 1fr .3fr;
     grid-template-areas:"logo"
@@ -55,7 +54,6 @@ body{
     height: 100px;
     grid-area: inputbox;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -178,10 +176,15 @@ details[open] p {
         font-size: 14px;
     }
     .inputbox{
+        height: 150px;
         flex-direction: column;
     }
+    #invalid-msg{
+        display: flex;
+        justify-content: center;
+    }
     .inputTxtAndButton{
-        flex-direction: column;
+        padding-top: 0px;
     }
     .inputbox input[type=text]{
         width: 300px;
