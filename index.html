@@ -30,9 +30,12 @@
       <h1>We are launching <span>soon!</span></h1>
       <p>Subscribe and get notified</p>
     </div>
-    <div class="inputbox">
-      <input type="text" placeholder="Your email address..." id="email-input">
-      <button id="notify-btn">Notify Me</button>
+    <div class="inputbox" id="inputbx">
+      <div class="inputTxtAndButton">
+        <input type="text" placeholder="Your email address..." id="email-input">
+        <p id="invalid-msg"></p>
+      </div>
+      <button onclick=" return validation()" id="notify-btn" class="notify-bt">Notify Me</button>
     </div>
     <div class="dashboard">
       <div class="dashimg"></div>

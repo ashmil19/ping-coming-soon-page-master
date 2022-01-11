@@ -52,11 +52,26 @@ body{
     font-size: 16px;
 }
 .inputbox{
+    height: 100px;
     grid-area: inputbox;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
+
+#invalid-msg{
+    color: hsl(354, 100%, 66%);
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.inputTxtAndButton{
+    height: 100px;
+    padding-top: 27px;
+}
+
 .inputbox input[type=text]{
     width: 350px;
     height: 45px;
@@ -142,6 +157,10 @@ button:hover{
     margin-left: 10px;
 }
 
+details[open] p {
+    color: red;
+}
+
 /* mobile layout */
 
 @media(max-width: 767px){
@@ -159,6 +178,9 @@ button:hover{
         font-size: 14px;
     }
     .inputbox{
+        flex-direction: column;
+    }
+    .inputTxtAndButton{
         flex-direction: column;
     }
     .inputbox input[type=text]{
